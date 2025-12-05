@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML bdi Tag</title>
+
+</head>
+
+<body>
+
+    <!-- bdi tag
+Isolate the usernames from the surrounding text-direction settings.
+-->
+
+    <p>
+		In the example below, usernames are shown along with the number of points in a contest.
+		If the bdi element is not supported in the browser, the username of the Arabic user would confuse the text (the bidirectional algorithm would put the colon and the number "90" next to the word "User" rather than next to the word "points").
+	</p>
+
+    <p>🌀 bdi 是啥？
+
+BDI = Bi-Directional Isolation（双向文字隔离）
+
+听起来 corporate 很 fancy，对吧？
+但它的真实功能超朴素：
+
+👉 当你网页有左到右（LTR）+ 右到左（RTL）语言混在一起时，它帮你“隔离文字方向”，不让排版整个崩盘。
+
+例如：英文 + 阿拉伯文、希伯来文混一起时，顺序会跑掉。
+bdi 就是排版的防爆盾。</p>
+
+	<ul>
+	 <li>User <bdi>John</bdi>: 60 points</li>
+	 <li>User <bdi>jdoe</bdi>: 80 points</li>
+	 <li>User <bdi>إيان</bdi>: 90 points</li>
+	</ul>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Progress Tag</title>
+
+    <script>    
+        var pBar = document.getElementById('p');
+        var updateProgress = function(value)
+        {
+            pBar.value = value;
+            pBar.getElementsByTagName('span')[0].innerHTML = Math.floor((100/70)*value);
+        }
+    </script>
+
+</head>
+<body>
+    
+    <!-- <progress> Tag 
+The HTML <progress> tag specifies a completion progress of a task.
+ It is displayed as a progress bar.
+ The value of progressbar can be manipulated by JavaScript.
+ -->
+
+    <progress id="p" max="70"> <span>0</span>%</progress>
+
+</body>
+</html>

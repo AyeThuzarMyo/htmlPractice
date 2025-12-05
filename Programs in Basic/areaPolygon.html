@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML area Tag</title>
+</head>
+<body>
+    
+    <img src="../images/bird.jpg" alt="usemap" border="0" width="200px" height="200px" usemap="#prghb"/>
+
+	<map name="prghb">
+			
+		<!--Coordinates of polygon shape are x1,y1,x2,y2,x3,y3....
+		If the first and last coordinate pairs are not the same,
+		then browser will add the last coordinate pair to close the polygon 
+		-->
+		
+		<area shape="poly" coords="44,34,81,34,101,67,81,100,44,100,23,67" href="http://google.com"
+		alt="AreaTag" target="_self" />
+   
+	</map>
+    
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML area Tag</title>
+</head>
+<body>
+    
+    <img src="https://picsum.photos/300" usemap="#prghb">
+
+    <map name="prghb">
+        <area shape="poly" 
+              coords="44,34,81,34,101,67,81,100,44,100,23,67"
+              href="https://google.com"
+              alt="AreaTag"
+              target="_self">
+    </map>
+
+</body>
+</html> -->

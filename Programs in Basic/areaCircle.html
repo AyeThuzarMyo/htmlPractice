@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Area Tag</title>
+
+</head>
+
+<body>
+    
+    <!-- <area> Tag with circle shape 
+The HTML <area> tag is used for defining an area in an image map.-->
+
+    <img src="../images/car.jpg" alt="usemap" border="0" usemap="#prghb" width="200px" height="200px"/>
+
+	<map name="prghb">
+			
+		<!--Coordinates of circle shape are centerx,centery,radius-->
+		
+		<area shape="circle" coords="71,70,35" href="http://www.google.com"
+		alt="AreaTag" target="_self" onmouseover="console.log('hovered!')"/>
+   
+	</map>
+</body>
+</html>
